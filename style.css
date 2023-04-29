@@ -1,0 +1,273 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    /* display: contents; */
+}
+
+.main {
+
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.show {
+    width: 100%;
+    /* height: 450px; */
+    background-color: #161616;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    /* margin-right: 0; */
+
+}
+
+
+
+.writing {
+    color: white;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.watch {
+    background-color: red;
+    color: white;
+    border-left: 20px;
+    border-right: 20px;
+    border-top: 15px;
+    border-bottom: 15px;
+    padding: 7px;
+    border-radius: 2px;
+    margin-top: 20px;
+
+}
+
+.photo {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.pic {
+    height: 430px
+}
+
+/* ---------------- */
+
+
+.both {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.list {
+    width: 20%;
+    background-color: #161616;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 250px;
+    /* color: white; */
+}
+
+.list-design {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.list-design:hover {
+    background-color: red;
+}
+
+.description {
+    width: 80%;
+}
+
+.main-blog {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.main-blog-desc {
+    padding: 10px;
+}
+
+.transfer-btn {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.transfer-btn:hover {
+    background-color: #161616;
+    color: white;
+    cursor: pointer;
+}
+
+.desc-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.last {
+    background-color: #161616;
+    width: 100%;
+    height: 300px;
+}
+
+.goal {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+hr {
+    width: 80%;
+}
+
+#contact {
+    display: flex;
+    margin-right: 9%;
+    margin-left: 9%;
+    color: rgba(255, 255, 255, 0.71);
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .show {
+        flex-direction: column;
+    }
+
+    .pic {
+        height: 300px;
+        /* overflow-x: hidden; */
+        align-items: center;
+        margin-left: 15%;
+    }
+
+    .both {
+        flex-direction: column;
+
+    }
+
+    .list {
+
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: white;
+
+    }
+
+    .list-design {
+        border: 1px solid rgba(0, 0, 0, 0.444);
+    }
+
+    .list-design:hover {
+        color: red;
+    }
+
+    .description {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .main-blog {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 12%;
+
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width:900px) {
+    .both {
+        flex-direction: column;
+    }
+
+    .pic {
+        overflow: hidden;
+        height: 480px;
+        width: 330px;
+    }
+
+    .list {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        margin-bottom: 20px;
+        background-color: white;
+
+    }
+
+    .list-design {
+        height: 30px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.444);
+    }
+
+    .description {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+        align-items: center;
+    }
+}
